@@ -31,4 +31,5 @@ Follow-up: Is there a way to make it strongly typed?
 
 ## Challenger Approaching!  
 ![](images/challenger-approaching.jpg)
-Enter TypeScript!
+
+Enter TypeScript!  More friend than foe, TypeScript is a way to introduce strongly typed programming with our old friend, JavaScript. 
