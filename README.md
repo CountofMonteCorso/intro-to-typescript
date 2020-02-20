@@ -147,7 +147,7 @@ let miles: unknown = 40;
 
 ![](images/thor.png)
 
-## Type Inference
+## 7. Type Inference
 Of course, typing is optional in TypeScript, but how we declare our variables can make a big difference.
 
 - Declare a new variable without a type, but don't assign it a value here.
@@ -167,4 +167,4 @@ elevation = "10 feet";
 
 Although we didn't declare a type in either instance, TypeScript was able to infer the type of elevation because we had already assigned it a value.
 
-## Functions
+## 8. Functions: Activity
