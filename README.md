@@ -63,4 +63,17 @@ Pretty cool, right? But manually recompiling our code would take too long, let's
 - Try to create an error in your code to see it in action!
 - Now try changing your message in the sos.ts file, save, and check the sos.js file to see the changes updated automatically.
 
-## 5. You're Just my Type - Variable Declarations
+## 5. You're Just my Type...of Variable - Variable Types in TypeScript
+
+With TypeScript we can assign a type to a variable like so:
+
+```
+let messageReceived: boolean = true;
+let miles: integer = 40;
+let destination: string = "Anywhere!";
+```
+We can even use template literals with our strings to embed other variables like so:
+
+```
+let messageTwo: string = `I'm only ${miles} away on an island! Come at once!`;
+```
