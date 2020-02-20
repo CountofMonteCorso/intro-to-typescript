@@ -59,7 +59,7 @@ console.log(message);
 Pretty cool, right? But manually recompiling our code would take too long, let's teach the computer to do it for us.
 
 - In the command line, run the command `tsc sos --watch`.
-  - This should show a message in the terminial notifying you that the TypeScript compiler is watching the sos.ts file for errors.
+  - This should show a message in the terminal notifying you that the TypeScript compiler is watching the sos.ts file for errors.
 - Try to create an error in your code to see it in action!
 - Now try changing your message in the sos.ts file, save, and check the sos.js file to see the changes updated automatically.
 
@@ -69,7 +69,7 @@ With TypeScript we can assign a type to a variable like so:
 
 ```
 let messageReceived: boolean = true;
-let miles: integer = 40;
+let miles: number = 40;
 let destination: string = "Anywhere!";
 ```
 We can even use template literals with our strings to embed other variables like so:
@@ -77,3 +77,63 @@ We can even use template literals with our strings to embed other variables like
 ```
 let messageTwo: string = `I'm only ${miles} away on an island! Come at once!`;
 ```
+
+Try outputting a second message to the console that contains one of the previously defined variables.
+
+### 5.1 Array Types
+TypeScript offers many ways of declaring arrays. If you want to declare an array, simply add `[]` after number like so:
+```
+let array: number[] = [6, 7, 8];
+```
+You can do this with the other types as well, such as strings or booleans, or even mix types.
+
+```
+let shipsLog: [name, number] = ['The Captain', 47];
+```
+Just make sure that each part of the array matches the type in its position or you'll get an error.
+
+## 6. Cool. What's the Point?
+
+Now that we can assign types to our variables, we can use those types to help prevent errors in our code.
+
+### 6.1 Error checking
+Continuing with the example, try to set miles as true like so and share what you've found:
+
+```
+miles = true;
+```
+
+Since we've already told TypeScript that our miles variable has to be a number, when we try to set it as true, it gives us an error to let us know our mistake.
+
+Assigning types gives us access to another cool ability as well, and that's called IntelliSense.
+
+### 6.2 IntelliSense
+
+IntelliSense helps by providing us methods that pertain to the declared type for that variable.  
+- In the sample code, add a period after each of your variables below their declaration like so:
+
+```
+message.
+```
+
+IntelliSense has lots of handy methods available.  Call a student up to help and let's try to get our point across and let our message recipients know we're serious by having the message output in all capital letters.  When you think you've got it, have it printed out to the console to check.
+
+```
+console.log(message.toUpperCase());
+```
+
+### 6.3 Ok, But What if I don't Know the Type?
+There are going to be times where you may not know what type of input you're going to get.  TypeScript gives us two methods to address this:
+
+- Any
+  - the "any" type allows for the variable to have any type.  Issues can arise because you could declare assign your miles variable in the example a string method if its type is any, and TypeScript wouldn't catch the error.
+- Unknown
+  - to help solve the problem the "any" type can present, the "unknown" type was created.
+  - this gives us a way to accept an input whose type we don't know yet and still exact certain methods on it like so:
+
+```
+let miles: unknown = 40;
+let test = (miles as string).charAt(1);
+```
+
+## Type Inference
