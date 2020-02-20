@@ -168,3 +168,5 @@ elevation = "10 feet";
 Although we didn't declare a type in either instance, TypeScript was able to infer the type of elevation because we had already assigned it a value.
 
 ## 8. Functions: Activity
+
+Open up the activity folder, then the unsolved folder.  Open the `sos.ts` file and instruct students to follow the directions.  If student finish early, have them do them try the activity's bonus challenge with the remaining time. 
