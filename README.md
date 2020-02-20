@@ -29,7 +29,16 @@ Discuss advantages and disadvantages to either (for instance, strongly typed can
 Ask: Is JavaScript considered a strongly or weakly typed language?  
 Follow-up: Is there a way to make it strongly typed?
 
-## Challenger Approaching!  
+## Challenger Approaching! (Introduce TypeScript)  
 ![](images/challenger-approaching.jpg)
 
-Enter TypeScript!  More friend than foe, TypeScript is a way to introduce strongly typed programming with our old friend, JavaScript. 
+Enter TypeScript!  More friend than foe, TypeScript is a way to introduce strongly typed programming with our old friend, JavaScript. We call it a "typed superset" because it's built upon JavaScript and compiles into JavaScript but it's key feature is to provide static type-checking to help us avoid errors.
+
+### Instructor Action: Environment Setup
+- Make sure everyone has Node working on their machine `node -v`
+- From there, have students install TypeScript `npm install -g typescript`
+- Check to make sure it worked `tsc -v`
+- Get ready to rumble!
+
+## First Exercise
+Have students create a folder for the exercise
