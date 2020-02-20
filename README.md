@@ -40,8 +40,8 @@ Enter TypeScript!  More friend than foe, TypeScript is a way to introduce strong
 - Check to make sure it worked `tsc -v`
 - Get ready to rumble!
 
-# First Exercise, Let's Begin!
-![](drake-typescript.jpg)
+## First Exercise, Let's Begin!
+![](drake-typescript.png)
 - Have students create a folder for the exercise, we'll just call it "typescript-exercise".
 - In the folder, create a file called "sos.ts".
 - Within the file have them declare a variable called "message" and set it equal to "Help me!" and console log it as follows.
@@ -52,4 +52,11 @@ console.log(message);
 ```
 
 - Open up a terminal window and run `node sos.ts` to ensure the output is correct.
-- Next, let's have TypeScript
+- Next, let's have TypeScript compile our .ts file into a .js file by running the command `tsc sos.ts`.
+- Check to make sure a .js file was added to the folder.
+
+Pretty cool, right? But manually recompiling our code would take too long, let's teach the computer to do it for us.
+
+- In the command line, run the command `tsc sos --watch`.
+  - This should show a message in the terminial notifying you that the TypeScript compiler is watching the sos.ts file for errors.
+- Try to create an error in your code to see it in action!
