@@ -7,10 +7,14 @@ This is a lesson plan to teach TypeScript to someone new but familiar with JavaS
 
 
 ## 1. Instructor Action: JavaScript Recap
-Briefly ask students to recap uses for JavaScript (create interactive pages, send/receive server data, dynamic rendering, etc).
+Briefly ask students to recap uses for JavaScript. Sample responses:
+- create interactive pages
+- send/receive server data
+- dynamic rendering
+- etc
 
 ### JavaScript: The Weird Parts
-There is of course a book on this, but it would be fun to briefly go over some unusual behaviors that JavaScript can encounter when using it, and such an article exists for guidance: https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e
+There is, of course, a book on this, but it would be fun to briefly go over some unusual behaviors that JavaScript can encounter when using it, and such an article exists for guidance: https://medium.com/@daffl/javascript-the-weird-parts-8ff3da55798e and if time allows, demonstrate some of the things discussed or have the students try them out.
 
 Feel free to include fun JS memes in the presentation to make it interesting!
 ![](images/patrick-js.png)
@@ -20,11 +24,11 @@ Feel free to include fun JS memes in the presentation to make it interesting!
 Wouldn't it be great if we had something to help us avoid some of the craziness of code?
 
 ## 2. Instructor Action: Google Fu!
-Ask students to take a couple minutes to Google "strongly typed" and "weakly typed" programming languages and review their findings
+Ask students to take a couple minutes to Google "strongly typed" and "weakly typed" programming languages and review their findings.
 
-A strongly typed programming language refers to use of programming language types in order to both capture invariants of the code, and ensure its correctness, and definitely exclude certain classes of programming errors. Thus there are many "strong typing" disciplines used to achieve these goals.  Weakly typed languages simply don't have those rules.
+After the discussion, if it's unclear, make sure they understand that a strongly typed programming language refers to use of programming language types in order to both capture invariants of the code, and ensure its correctness, and definitely exclude certain classes of programming errors. Thus there are many "strong typing" disciplines used to achieve these goals.  Weakly typed languages simply don't have those rules.
 
-Discuss advantages and disadvantages to either (for instance, strongly typed can help prevent errors but weakly typed offer better performance).
+Call on students to hypothesize advantages and disadvantages to either (for instance, strongly typed can help prevent errors but weakly typed offer better performance).
 
 Ask: Is JavaScript considered a strongly or weakly typed language?  
 Follow-up: Is there a way to make it strongly typed?
@@ -56,7 +60,7 @@ console.log(message);
 - Next, let's have TypeScript compile our .ts file into a .js file by running the command `tsc sos.ts`.
 - Check to make sure a .js file was added to the folder.
 
-Pretty cool, right? But manually recompiling our code would take too long, let's teach the computer to do it for us.
+Pretty cool, right? But manually recompiling our code every time it changes would take too long, let's teach the computer to do it for us.
 
 - In the command line, run the command `tsc sos --watch`.
   - This should show a message in the terminal notifying you that the TypeScript compiler is watching the sos.ts file for errors.
@@ -169,4 +173,4 @@ Although we didn't declare a type in either instance, TypeScript was able to inf
 
 ## 8. Functions: Activity
 
-Open up the activity folder, then the unsolved folder.  Open the `sos.ts` file and instruct students to follow the directions.  If student finish early, have them do them try the activity's bonus challenge with the remaining time. 
+Open up the activity folder, then the unsolved folder.  Open the `sos.ts` file and instruct students to follow the directions.  If student finish early, have them do them try the activity's bonus challenge with the remaining time.
