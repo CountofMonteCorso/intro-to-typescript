@@ -92,12 +92,21 @@ let shipsLog: [name, number] = ['The Captain', 47];
 ```
 Just make sure that each part of the array matches the type in its position or you'll get an error.
 
+### Multiple Types
+If you ever need a variable to have multiple types, TypeScript has you covered! When assigning the types, use the `|` operator like so:
+
+```
+let hybrid: string | boolean;
+hybrid = "I'm thirsty, get me off this island!";
+hybrid = false
+```
+
 ## 6. Cool. What's the Point?
 
-Now that we can assign types to our variables, we can use those types to help prevent errors in our code.
+Now that we can assign types to our variables, we can use those types to help prevent errors in our code and help us code more efficiently.
 
 ### 6.1 Error checking
-Continuing with the example, try to set miles as true like so and share what you've found:
+Continuing with the example, try to set miles as true like so and call on a student to share what they found:
 
 ```
 miles = true;
@@ -133,7 +142,29 @@ There are going to be times where you may not know what type of input you're goi
 
 ```
 let miles: unknown = 40;
-let test = (miles as string).charAt(1);
+(miles as string).charAt(1);
 ```
 
+![](images/thor.png)
+
 ## Type Inference
+Of course, typing is optional in TypeScript, but how we declare our variables can make a big difference.
+
+- Declare a new variable without a type, but don't assign it a value here.
+- On the following line, assign a value like so:
+
+```
+let mileage;
+milage = 100;
+```
+
+- Next, declare a variable and assign it a value on the same line, but try to re-assign it on the following line, like so and call on a student to share their findings:
+
+```
+let elevation = 5;
+elevation = "10 feet";
+```
+
+Although we didn't declare a type in either instance, TypeScript was able to infer the type of elevation because we had already assigned it a value.
+
+## Functions
