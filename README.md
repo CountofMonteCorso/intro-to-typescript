@@ -40,5 +40,16 @@ Enter TypeScript!  More friend than foe, TypeScript is a way to introduce strong
 - Check to make sure it worked `tsc -v`
 - Get ready to rumble!
 
-## First Exercise
-Have students create a folder for the exercise
+# First Exercise, Let's Begin!
+![](drake-typescript.jpg)
+- Have students create a folder for the exercise, we'll just call it "typescript-exercise".
+- In the folder, create a file called "sos.ts".
+- Within the file have them declare a variable called "message" and set it equal to "Help me!" and console log it as follows.
+
+```
+let message = "Help me!";
+console.log(message);
+```
+
+- Open up a terminal window and run `node sos.ts` to ensure the output is correct.
+- Next, let's have TypeScript
